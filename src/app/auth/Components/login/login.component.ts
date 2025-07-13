@@ -22,16 +22,7 @@ export class LoginComponent {
   onSubmit(): void {
     if (this.loginForm.valid) {
       // API link source: https://dummyjson.com/docs/auth
-      this.http.post('https://dummyjson.com/auth/login', this.loginForm.value).subscribe({
-        next: (response) => {
-          console.log('Login successful:', response);
-          // Handle successful login
-        },
-        error: (error) => {
-          console.error('Login failed:', error);
-          // Handle login error
-        }
-      });
+      this.http.post('https://dummyjson.com/auth/login', this.loginForm.value).subscribe();
     }
   }
 
