@@ -3,7 +3,7 @@ name: 'text CI/CD'
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build:
     runs-on: 'ubuntu-latest'
